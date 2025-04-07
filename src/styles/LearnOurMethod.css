@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Lexend', sans-serif;
+}
+  
+.logoContainer {
+    background-color: #eef5f4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-method-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    width: 100%;
+    background-color: #01443a;
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .learn-method-title {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  .telescope-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  
+  
+  .learn-method-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    padding: 40px 0px;
+    gap: 40px;
+  }
+  
+  .images-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .status-image {
+    object-fit: contain;
+  }
+
+
+  .listContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 110px;
+    gap: 15px;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  .listContainer h2 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  .listContainer p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+  
+  .info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .info-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color: rgba(143, 194, 159, 0.4);
+    padding: 15px 10px 15px 10px;
+    font-weight: 300;
+    border-radius: 8px;
+  }
+
+  .all-scroll-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .all-scroll-bar p {
+    font-size: 42px;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+  }
+
+  .scroll-bar-container {
+    position: relative;
+    width: 4px;
+    background-color: #00221d;
+    border-radius: 20px;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 0 20px;
+  }
+  
+  .scroll-bar-fill {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #25c19b;
+    transition: height 0.6s ease-in-out;
+    border-radius: 20px;
+  }
+
+  .hidden-section {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .learn-method-container {
+      flex-direction: row;
+      gap: 30px;
+      padding: 40px 16px;
+      align-items: start;
+    }
+  
+    .images-column {
+      display: none;
+    }
+  
+    .listContainer h2 {
+      text-align: left;
+      font-size: 24px;
+    }
+  
+    .listContainer p {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 200;
+    }
+  
+    .info-list {
+      text-align: left;
+      font-size: 16px;
+    }
+  
+    .info-list li {
+      justify-content: left;
+      font-size: 15px;
+      padding: 8px;
+    }
+  
+    .all-scroll-bar {
+      align-items: center;
+    }
+  
+    .scroll-bar-container {
+      height: 440px;
+    }
+  
+    .learn-method-title {
+      font-size: 32px;
+      padding: 0px 15px;
+    }
+  }
+  
+  
+  
